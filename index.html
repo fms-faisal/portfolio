@@ -10,27 +10,62 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <section></section>
+    <section class="lg:w-[90%] mx-auto shadow-xs rounded-full font-semibold my-2">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">Projects</a>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl text-green-500">faisalmahmud778@gmail.com</a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Projects</a>
+            </li>
+            <li>
+              <a href="">Education</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div> -->
+      </div>
+    </section>
 
     <section>
-      <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+      <div class="max-w-4xl lg:max-w-[90%] flex items-center lg:h-[calc(100vh-16rem)] flex-wrap mx-auto my-32 lg:my-0">
         <!--Main Col-->
-        <div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-lg shadow-xl bg-white opacity-75 mx-6 lg:mx-0">
-          <div class="p-4 md:p-12 text-center lg:text-left">
+        <div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-lg shadow-md bg-white opacity-75 mx-6 lg:mx-0">
+          <div class="p-4 md:px-12 md:py-6 text-center lg:text-left">
             <!-- Image for mobile view-->
             <div
               class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
               style="background-image: url('https://i.ibb.co/yhTKhfF/IMG-6736.jpg')"></div>
 
-            <h1 class="text-3xl font-bold pt-8 lg:pt-0">Faisal Mahmud</h1>
-            <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
-            <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
-              <!-- <svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path
-                d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
-            </svg> -->
-              I’m a Frontend Developer skilled in ReactJS, JavaScript
-            </p>
+            <h1 class="text-2xl font-bold pt-8 lg:pt-0 text-center">Faisal Mahmud</h1>
+            <div class="mx-auto lg:mx-auto w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+            <p class="pt-4 font-semibold text-center">I’m a Frontend Developer skilled in ReactJS, JavaScript</p>
             <!-- <p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
             <svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
               <path
@@ -38,15 +73,58 @@
             </svg>
             Your Location - 25.0000° N, 71.0000° W
           </p> -->
-            <p class="pt-8 text-sm">
+            <p class="pt-4 text-sm text-center">
               I love creating cool web apps with ReactJS and JavaScript. Always excited to learn new things and tackle fresh challenges!
             </p>
 
-            <div class="pt-12 pb-8">
-              <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-md">Download CV</button>
+            <section class="pt-6">
+              <p align="center">
+                <a href="https://skillicons.dev">
+                  <img src="https://skillicons.dev/icons?i=html,css,tailwind,js,react,express,mongodb" />
+                </a>
+              </p>
+
+              <div class="flex flex-row items-center justify-center py-4">
+                <!-- Bottom Row: Languages and Tools Icons -->
+                <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
+                  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40" />
+                </a>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+                    alt="cplusplus"
+                    width="40"
+                    height="40" />
+                </a>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <a href="https://www.java.com" target="_blank" rel="noreferrer">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                    alt="java"
+                    width="40"
+                    height="40" />
+                </a>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <a href="https://www.python.org/" target="_blank" rel="noreferrer">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                    alt="python"
+                    width="40"
+                    height="40" />
+                </a>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" />
+                </a>
+              </div>
+            </section>
+
+            <div class="pt-2 pb-4 flex justify-center">
+              <button class="bg-green-700 hover:bg-green-500 text-white font-bold btn-sm rounded-md">Download CV</button>
             </div>
 
-            <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+            <div class="mt-4 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-around">
               <a class="link" href="https://www.facebook.com/faisalmahmud778/" data-tippy-content="Faisal Mahmud" target="_blank"
                 ><svg class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Facebook</title>
